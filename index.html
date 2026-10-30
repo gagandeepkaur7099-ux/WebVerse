@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="WebVerse is an interactive educational platform to explore the history, evolution and technologies of the digital world.">
+
+    <title>WebVerse | Explore the Digital World</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">Web<span>Verse</span></a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#history">History</a>
+                <a href="#evolution">Web Evolution</a>
+                <a href="#gallery">Technology Gallery</a>
+                <a href="#about">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HOME HERO -->
+    <main>
+
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <p class="eyebrow">DISCOVER • LEARN • EXPLORE</p>
+
+                    <h1>
+                        Explore the
+                        <span>Evolution</span>
+                        of the Web
+                    </h1>
+
+                    <p class="hero-description">
+                        Journey through the history of the internet,
+                        understand modern technologies and discover
+                        the innovations shaping our digital future.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#history" class="btn btn-primary">
+                            Explore History →
+                        </a>
+
+                        <a href="#gallery" class="btn btn-secondary">
+                            Discover Technology
+                        </a>
+                    </div>
+
+                    <div class="hero-note">
+                        <span class="note-dot"></span>
+                        An interactive learning journey from 1970 to 2026
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <img
+                        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&auto=format&fit=crop"
+                        alt="Digital network and connected world"
+                    >
+
+                    <div class="floating-card">
+                        <span>🌐</span>
+                        <div>
+                            <strong>One Digital World</strong>
+                            <small>Explore how technology connects us</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- INTRODUCTION -->
+        <section class="intro section-padding">
+            <div class="container intro-content">
+
+                <p class="eyebrow">WELCOME TO WEBVERSE</p>
+
+                <h2>Understand the Digital World, One Discovery at a Time</h2>
+
+                <p>
+                    WebVerse is an educational platform designed to explain
+                    the development of the internet, web technologies and
+                    modern digital innovations in simple language.
+                    Learn through timelines, images, facts and interactive
+                    topic pages.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- INTERNET HISTORY -->
+        <section class="history-section section-padding" id="history">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">FROM THE BEGINNING TO TODAY</p>
+                    <h2>History of the Internet</h2>
+                    <p>
+                        Explore important milestones that shaped the
+                        internet and digital communication.
+                    </p>
+                </div>
+
+                <div class="history-search">
+                    <input
+                        type="search"
+                        id="historySearch"
+                        placeholder="Search a year or event..."
+                        aria-label="Search internet history"
+                    >
+
+                    <span id="historyCount">Milestones from 1970–2026</span>
+                </div>
+
+                <div class="timeline" id="timeline">
+
+                    <!-- Timeline cards are generated by script.js -->
+
+                </div>
+
+                <p class="empty-message" id="historyEmpty" hidden>
+                    No matching historical event found.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- WEB EVOLUTION -->
+        <section class="evolution-section section-padding" id="evolution">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">HOW THE WEB CHANGED</p>
+                    <h2>Evolution of the Web</h2>
+                    <p>
+                        Discover the three major stages commonly used
+                        to explain the development of the World Wide Web.
+                    </p>
+                </div>
+
+                <div class="evolution-grid">
+
+                    <article class="evolution-card">
+                        <div class="evolution-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800&auto=format&fit=crop"
+                                alt="Early computer programming and web technology"
+                                loading="lazy"
+                            >
+                            <span class="era-label">THE BEGINNING</span>
+                        </div>
+
+                        <div class="evolution-content">
+                            <p class="eyebrow">READ-ONLY WEB</p>
+                            <h3>Web 1.0</h3>
+                            <p>
+                                The early web focused mainly on static
+                                websites where users could read information
+                                but had limited interaction.
+                            </p>
+                            <a href="explore.html?topic=web-1"
+                               class="text-link">
+                                Explore Web 1.0 →
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="evolution-card">
+                        <div class="evolution-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&auto=format&fit=crop"
+                                alt="Social media and interactive digital platforms"
+                                loading="lazy"
+                            >
+                            <span class="era-label">THE INTERACTIVE WEB</span>
+                        </div>
+
+                        <div class="evolution-content">
+                            <p class="eyebrow">READ-WRITE WEB</p>
+                            <h3>Web 2.0</h3>
+                            <p>
+                                Web 2.0 introduced interactive platforms,
+                                social media, online communities and
+                                user-generated content.
+                            </p>
+                            <a href="explore.html?topic=web-2"
+                               class="text-link">
+                                Explore Web 2.0 →
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="evolution-card">
+                        <div class="evolution-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop"
+                                alt="Decentralized digital technology"
+                                loading="lazy"
+                            >
+                            <span class="era-label">THE EMERGING WEB</span>
+                        </div>
+
+                        <div class="evolution-content">
+                            <p class="eyebrow">DECENTRALIZED WEB IDEAS</p>
+                            <h3>Web 3.0</h3>
+                            <p>
+                                Web 3.0 is associated with ideas such as
+                                decentralization, blockchain and more
+                                user-controlled digital experiences.
+                            </p>
+                            <a href="explore.html?topic=web-3"
+                               class="text-link">
+                                Explore Web 3.0 →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECHNOLOGY GALLERY -->
+        <section class="gallery-section section-padding" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">EXPLORE TECHNOLOGY</p>
+                    <h2>Technology Gallery</h2>
+                    <p>
+                        Select a topic to open its dedicated learning
+                        and exploration page.
+                    </p>
+                </div>
+
+                <div class="technology-grid">
+
+                    <!-- COMPUTER NETWORKING -->
+                    <article class="technology-card">
+                        <div class="technology-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&auto=format&fit=crop"
+                                alt="Computer networking servers"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="technology-content">
+                            <span class="topic-number">01 / CONNECTIVITY</span>
+                            <h3>Computer Networking</h3>
+                            <p>
+                                Understand how computers and devices
+                                connect, communicate and share information.
+                            </p>
+
+                            <a href="explore.html?topic=networking"
+                               class="gallery-btn">
+                                Explore Networking →
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- WEB DEVELOPMENT -->
+                    <article class="technology-card">
+                        <div class="technology-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&auto=format&fit=crop"
+                                alt="Web developer working on code"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="technology-content">
+                            <span class="topic-number">02 / CREATION</span>
+                            <h3>Web Development</h3>
+                            <p>
+                                Explore how HTML, CSS, JavaScript and
+                                other technologies create websites.
+                            </p>
+
+                            <a href="explore.html?topic=web-development"
+                               class="gallery-btn">
+                                Explore Web Development →
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- MODERN TECHNOLOGY -->
+                    <article class="technology-card">
+                        <div class="technology-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=900&auto=format&fit=crop"
+                                alt="Modern robotics and technology"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="technology-content">
+                            <span class="topic-number">03 / INNOVATION</span>
+                            <h3>Modern Technology</h3>
+                            <p>
+                                Discover artificial intelligence, robotics,
+                                cloud computing and future innovations.
+                            </p>
+
+                            <a href="explore.html?topic=modern-technology"
+                               class="gallery-btn">
+                                Explore Modern Technology →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DID YOU KNOW -->
+        <section class="fact-section section-padding">
+            <div class="container">
+
+                <div class="fact-box">
+                    <div class="fact-icon">💡</div>
+
+                    <div>
+                        <p class="eyebrow">DID YOU KNOW?</p>
+                        <h2>The Web and the Internet Are Not the Same</h2>
+                        <p>
+                            The Internet is a global network of connected
+                            networks. The World Wide Web is a system of
+                            linked pages and resources that works over
+                            the Internet.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about-section section-padding" id="about">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000&auto=format&fit=crop"
+                        alt="Students learning digital technology"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="about-content">
+                    <p class="eyebrow">ABOUT WEBVERSE</p>
+
+                    <h2>Learning Technology Made Simple</h2>
+
+                    <p>
+                        WebVerse is created as an educational Web Technology
+                        project. Its purpose is to make complex digital
+                        concepts easier to understand through simple
+                        explanations, visual learning and interactive
+                        exploration.
+                    </p>
+
+                    <p>
+                        From the early internet to emerging technologies,
+                        WebVerse connects the past, present and future
+                        of the digital world.
+                    </p>
+
+                    <a href="#home" class="text-link">
+                        Back to Top ↑
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo footer-logo">
+                Web<span>Verse</span>
+            </a>
+
+            <p>
+                Explore the Past. Understand the Present.
+                Imagine the Future.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#history">History</a>
+                <a href="#evolution">Evolution</a>
+                <a href="#gallery">Technology</a>
+            </div>
+
+            <p class="copyright">
+                © <span id="currentYear">2026</span> WebVerse.
+                Educational Project.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <button id="backToTop" class="back-to-top"
+        aria-label="Back to top">
+        ↑
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

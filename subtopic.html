@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore technology topics with WebVerse.">
+  <title>Technology Explorer | WebVerse</title>
+  <link rel="stylesheet" href="subtopic.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">Web<span>Verse</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="explore.html?topic=modern-technology">Technology Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="topic-hero">
+      <div class="hero-content">
+        <p class="eyebrow" id="topicCategory">TECHNOLOGY EXPLORER</p>
+        <h1 id="topicTitle">Loading topic...</h1>
+        <p id="topicIntro">Discover the technology behind the digital world.</p>
+        <div class="hero-actions">
+          <a href="#overview" class="primary-btn">Start Exploring</a>
+          <a href="explore.html" class="secondary-btn">Back to Gallery</a>
+        </div>
+      </div>
+      <div class="hero-art" id="heroArt" aria-hidden="true">💡</div>
+    </section>
+
+    <section class="content-section" id="overview">
+      <div class="section-heading">
+        <p class="eyebrow">01 / INTRODUCTION</p>
+        <h2>What is <span id="overviewTitle">this technology</span>?</h2>
+      </div>
+      <div class="overview-card">
+        <p id="topicDefinition"></p>
+        <div class="example-box">
+          <strong>Real-life example</strong>
+          <p id="topicExample"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">02 / UNDERSTANDING</p>
+        <h2>How does it work?</h2>
+        <p class="section-subtitle">Understand the basic process in simple steps.</p>
+      </div>
+      <div class="steps-grid" id="workingSteps"></div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">03 / IMPORTANT POINTS</p>
+        <h2>Key concepts</h2>
+      </div>
+      <div class="concept-grid" id="keyPoints"></div>
+    </section>
+
+    <section class="content-section history-section">
+      <div class="section-heading">
+        <p class="eyebrow">04 / BACKGROUND</p>
+        <h2>History & evolution</h2>
+        <p class="section-subtitle" id="historyIntro"></p>
+      </div>
+      <div class="timeline" id="topicTimeline"></div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">05 / REAL WORLD</p>
+        <h2>Where is it used?</h2>
+      </div>
+      <div class="uses-grid" id="topicUses"></div>
+    </section>
+
+    <section class="content-section future-section">
+      <div class="section-heading">
+        <p class="eyebrow">06 / WHAT'S NEXT?</p>
+        <h2>Future scope</h2>
+      </div>
+      <div class="future-card">
+        <div class="future-icon">🚀</div>
+        <p id="futureText"></p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">07 / VISUAL LEARNING</p>
+        <h2>Explore images</h2>
+        <p class="section-subtitle">Discover related images from Wikimedia Commons.</p>
+      </div>
+      <div class="image-toolbar">
+        <p id="imageStatus" aria-live="polite">Preparing images...</p>
+        <button class="outline-btn" id="loadMoreBtn" type="button">Load More Images</button>
+      </div>
+      <div class="image-grid" id="imageGrid"></div>
+      <p class="api-note">Images are provided by Wikimedia Commons. Open an image's source to view its creator and license details.</p>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">08 / LEARN MORE</p>
+        <h2>Further reading</h2>
+      </div>
+      <div class="reading-card">
+        <div>
+          <h3 id="readingTitle">Read more about this topic</h3>
+          <p id="readingDescription">Explore a trusted reference for additional information.</p>
+        </div>
+        <a id="wikiLink" href="#" target="_blank" rel="noopener noreferrer">Read on Wikipedia ↗</a>
+      </div>
+    </section>
+
+    <section class="content-section related-section">
+      <div class="section-heading">
+        <p class="eyebrow">09 / KEEP EXPLORING</p>
+        <h2>Related topics</h2>
+      </div>
+      <div class="related-grid" id="relatedTopics"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html">Web<span>Verse</span></a>
+    <p>Explore. Learn. Understand the digital world.</p>
+    <a href="explore.html">Back to Technology Gallery ↑</a>
+  </footer>
+
+  <script src="subtopic.js"></script>
+</body>
+</html>
